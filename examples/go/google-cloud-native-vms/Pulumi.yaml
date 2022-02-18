@@ -1,0 +1,3 @@
+name: native-vms-go
+runtime: go
+description: An example of how to create vms with pulumi and the gcp native provider

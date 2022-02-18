@@ -1,0 +1,11 @@
+config:
+  native-kms-go:project: extgcp-tf-poc-sand-0l55
+  native-kms-go:var:
+    preFixKeyRing: my-keyring-prefix
+    preFixKey: my-key-prefix
+    location: us-central1
+    members:
+      - user@apple.com
+    role: roles/owner
+    rotation: 24
+    nextRotation: 24

@@ -1,0 +1,3 @@
+name: native-gke-cluster-go
+runtime: go
+description: an example of how to create gke clusters with pulumi and the gcp native provider

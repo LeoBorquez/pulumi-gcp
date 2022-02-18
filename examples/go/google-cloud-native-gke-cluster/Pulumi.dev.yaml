@@ -1,0 +1,21 @@
+# Each configuration has annotated which value was used in the tests
+config:
+  native-gke-cluster-go:project: project_ID # extgcp-tf-poc-sand-0l55
+  native-gke-cluster-go:var:
+    cluster: cluster_name # pulumi-cluster
+    description: A Pulumi managed cluster
+    confProject: project_secret_manager # bft-customer-config-8yp0
+    machine: machine_type # e2-standard-2
+    nodeName: nodepool_name # pulumi-native-nodepool-00
+    serviceAccount: service_account # k8s-node@project-id.iam.gserviceaccount.com
+    network : network_name # extgcp-tf-poc-sand-0l55-usc1-island-vpc
+    subNetwork: subnetwork_name # extgcp-tf-poc-sand-0l55-usc1-priv-island
+    podsSecondaryRangeName: secondary_range_name # extgcp-tf-poc-sand-0l55-usc1-priv-island-pod
+    servicesSecondaryRangeName: secondary_service_name # extgcp-tf-poc-sand-0l55-usc1-priv-island-svc4
+    location: location # us-central1
+    masterIpv4CidrBlock: /28 CIDR block # optional default value 192.168.23.16/28 #nolint:words
+    tags:
+    - allow-internet-egress
+  native-gke-cluster-go:labels:
+    apple_sys_env: sandbox
+    apple_sys_owner_div: "0056"

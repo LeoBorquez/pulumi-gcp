@@ -1,0 +1,3 @@
+name: native-bucket-go
+runtime: go
+description: an example of how to create buckets with pulumi and the gcp native provider

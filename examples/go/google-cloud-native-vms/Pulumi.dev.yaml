@@ -1,0 +1,17 @@
+# Each configuration has annotated which value was used in the tests
+config:
+  native-vms-go:project: project_ID # extgcp-tf-poc-sand-0l55
+  native-vms-go:var:
+    disk: disk_name # ubuntu-apple-pulumi-01
+    image: image_url # projects/gcp-at-apple-image-factory/global/images/apple-ubuntu-2004-lts-7a72b033
+    instance: vm_name # vm-instance-pulumi-00
+    machine: instance_type # e2-small
+    pnetwork: proyect_network # gns-network-prod-0d38
+    network: network_name # extgcp-tf-poc-sand-0l55-usc1-island-vpc
+    subnetwork: subnetwork_name # extgcp-tf-poc-sand-0l55-usc1-priv-island
+    region: us-central1
+    script: echo "Hello, World!" > index.html nohup python -m SimpleHTTPServer 80 &
+    tags:
+    - pulumi
+    - allow-internet-egress
+    zone: zone_location # us-central1-a

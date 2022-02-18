@@ -1,0 +1,4 @@
+# Each configuration has annotated which value was used in the tests
+config:
+  native-bucket-go:project: project_ID # extgcp-tf-poc-sand-0l55
+  native-bucket-go:bucket: bucket_name # bucket-pulumi
